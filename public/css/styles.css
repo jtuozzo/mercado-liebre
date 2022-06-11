@@ -32,9 +32,24 @@ header {
     padding-bottom: 20px;
 }
 
-header img {
-    width:50%;
+header .logo {
+    width:100%;
     padding:20px;
+  
+}
+
+.div-logo {
+    width:50%;
+}
+
+.div-search {
+    width:50%;
+}
+
+header .banner {
+    width:100%;
+    padding-top: 20px;
+    display: none;
 }
 
 main section {
@@ -101,11 +116,6 @@ article img {
     display:none;
 }
 
-#cuotas {
-    padding: 15px;
-    text-align: center;
-}
-
 
 .burger-menu {
     text-align: center;
@@ -118,14 +128,27 @@ article img {
     margin: auto;
 }
 
+.first-line {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
 
 .search {
     background-color: white;
     color: #666;
-    margin-left:20px;
     padding:5px;
-    border: solid black 1px;
-    line-height: 32px;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.cuotas {
+    padding: 15px;
+    align-self: auto;
+
 }
 
 
@@ -152,18 +175,40 @@ article img {
     .site-nav,.login-nav,.descripcion {
         display: block;
         }
-    .burger-menu
-        {display: none;
 
-        }
+    .burger-menu {
+        display: none;
+    }   
+    
+    header {
+        padding-bottom: 0px;
+    }
+    header .banner {
+        display: block;
+    }
+
      article {
          width: 50%;
      }
-    }
+
+ 
+
+}
 
 @media (min-width: 769px) {
     article {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
         width: 25%;
         }
+    .div-logo {
+            width:33%;
+        }
+        
+    .div-search {
+            width:33%;
+        }
+    
+    .first-line {
+            flex-wrap: nowrap;
+    }
 
