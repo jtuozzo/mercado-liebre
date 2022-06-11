@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form method="get" action="/" >
+        <input type="text" name="nombreApellido" id="nombreApellido" minlength="10" required placeholder="Nombre y apellido"  /> 
+        <input type="text" name="nombreUsuario" id="nombreUsuario" minlength="4" required placeholder="Usuario"/>
+        <input type="email" name="email" id="email" required placeholder="E-mail"/>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label> <input type="date" name="fechaNacimiento" id="fechaNacimiento" required />
+        <input type="text" name="domicilio" id="domicilio" minlength="10" required placeholder="Domicilio"/>
+        <label for="perfilUsuario">Perfil de usuario</label>
+        <input type="radio" name="perfilUsuario" value="compra"> Compra
+        <input type="radio" name="perfilUsuario" value="venta"> Venta
+
+        <label for="categoria">Categorías de interés</label>
+        <input type="checkbox" name="electro" id="electro"><label for="electro">Electro</label>
+        <input type="checkbox" name="moda" id="moda"><label for="moda">Moda</label>
+        <input type="checkbox" name="hogar" id="hogar"><label for="hogar">Hogar</label>
+        <input type="checkbox" name="jugueteria" id="jugueteria"><label for="jugueteria">Juguetería</label>
+        <input type="checkbox" name="vidaSana" id="vidaSana"><label for="vidaSana">Vida Sana</label>
+
+        <label for="foto">Foto:</label>  <input type="file" name="foto" id="foto" required />
+
+        <label for="contrasenia">Contraseña:</label> <input type="password" name="contrasenia" id="contrasenia" required />
+        <label for="confirmaContrasenia">Confirma contraseña:</label> <input type="password" name="confirmaContrasenia" id="confirmaContrasenia" required />
+
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar formulario</button>
+    </form>
+</body>
+</html>
