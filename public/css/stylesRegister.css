@@ -1,0 +1,72 @@
+form h2 {
+    text-align: center;
+}
+
+
+.inputs input {
+    width: 100%;
+    display: block;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    border: none;
+    color: #1C1C1B;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfil, .categoria {
+    margin-bottom: 20px;
+}
+
+
+.categoria label {
+    display: block;
+    margin-top: 8px;
+}
+
+.foto {
+    margin-bottom: 15px;
+}
+
+.botones {
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.boton {
+    background-color: #03264C;
+    padding: 10px;
+    color: white;
+    font-size: 1.1em;
+    cursor:pointer;
+    transition: all 0.3s ease-out;
+    border-radius:10px;
+    border: none;
+    width: 130px;
+}
+
+.boton:hover
+	{color: white;
+	 background: #666;
+	}
+
+@media (min-width: 361px) {
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 769px) {
+    form {
+        width: 70%;
+        margin: auto;
+    }
+    
+}
