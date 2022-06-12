@@ -44,6 +44,7 @@ header .logo {
 
 .div-search {
     width:50%;
+    display: flex;
 }
 
 header .banner {
@@ -145,6 +146,10 @@ article img {
     
 }
 
+.div-search input {
+    width: 80%;
+}
+
 .cuotas {
     padding: 15px;
     align-self: auto;
@@ -179,7 +184,7 @@ article img {
     .burger-menu {
         display: none;
     }   
-    
+
     header {
         padding-bottom: 0px;
     }
@@ -208,6 +213,8 @@ article img {
             width:33%;
         }
     
+ 
+
     .first-line {
             flex-wrap: nowrap;
     }
