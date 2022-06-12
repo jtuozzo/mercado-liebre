@@ -47,41 +47,13 @@
       </header>
     <main>
         <form method="post" action="/" >
-            <h2>Formulario de registro</h2>
+            <h2>Ingresá a tu cuenta</h2>
             <div class="inputs">
-                <input type="text" name="nombreApellido" id="nombreApellido" minlength="10" required placeholder="Nombre y apellido"  /> 
                 <input type="text" name="nombreUsuario" id="nombreUsuario" minlength="4" required placeholder="Usuario"/>
-                <input type="email" name="email" id="email" required placeholder="E-mail"/>
-                <label for="fechaNacimiento">Fecha de nacimiento:</label> <input type="date" name="fechaNacimiento" id="fechaNacimiento" required />
-                <input type="text" name="domicilio" id="domicilio" minlength="10" required placeholder="Domicilio"/>
-            </div>
-
-            <div class="perfil">
-                <label for="perfilUsuario">Perfil de usuario: &nbsp;</label>
-                <input type="radio" name="perfilUsuario" value="compra"> Compra
-                <input type="radio" name="perfilUsuario" value="venta"> Venta
-            </div>
-
-            <div class="categoria">
-                <label for="categoria">Categorías de interés:</label>
-                <label for="electro"> <input type="checkbox" name="electro" id="electro"> Electro</label>
-                <label for="moda"></label><input type="checkbox" name="moda" id="moda"> Moda</label>
-                <label for="hogar"></label><input type="checkbox" name="hogar" id="hogar"> Hogar</label>
-                <label for="jugueteria"></label><input type="checkbox" name="jugueteria" id="jugueteria"> Juguetería</label>
-                <label for="vidaSana"></label><input type="checkbox" name="vidaSana" id="vidaSana"> Vida Sana</label>
-            </div>
-
-            <div class="foto">
-                <label for="foto">Foto:</label>  <input type="file" name="foto" id="foto" required />
-            </div>
-            <div class="inputs">
                 <input type="password" name="contrasenia" id="contrasenia" required placeholder="Contraseña"/>
-                <input type="password" name="confirmaContrasenia" id="confirmaContrasenia" required placeholder="Confirma contraseña"/>
-
             </div>
             <div class="botones">
                 <button type="submit"  class="boton">Enviar</button>
-                <button type="reset" class="boton">Borrar formulario</button>
             </div>
         </form>
     </main>
