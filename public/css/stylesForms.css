@@ -47,11 +47,12 @@ form h2 {
     border-radius:10px;
     border: none;
     width: 130px;
+    transition: all 0.5s;
 }
 
+
 .boton:hover
-	{color: white;
-	 background: #666;
+	{background: #0022AA;
 	}
 
 @media (min-width: 361px) {
