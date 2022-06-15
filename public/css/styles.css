@@ -73,8 +73,12 @@ footer .icon {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+    transition: all 1s;
 }
 
+footer .icon:hover {
+    color: #39b54a;
+}
 main {
     margin:auto;
     width:90%;
