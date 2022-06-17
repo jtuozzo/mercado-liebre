@@ -24,7 +24,7 @@ app.get('/login', (req, res) => {
 })
 
 // Levantar el server
-let puerto = process.env.port || 3000;
+let puerto = process.env.PORT || 3000;
 
 app.listen( puerto, ()=> {
     console.log("servidor corriendo en el puerto " + puerto);
