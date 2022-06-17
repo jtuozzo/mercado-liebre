@@ -3,8 +3,6 @@
 const express = require('express');
 
 const app = express();
-const puerto = 3000;
-
 
 // Configuración del servidor
 
@@ -26,7 +24,8 @@ app.get('/login', (req, res) => {
 })
 
 // Levantar el server
+let puerto = process.env.port || 3000;
 
-app.listen(puerto, ()=> {
+app.listen( puerto, ()=> {
     console.log("servidor corriendo en el puerto " + puerto);
 })
